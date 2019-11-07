@@ -40,6 +40,10 @@
     <string name="force_lte_ca_title">Carrier aggregation</string>
     <string name="force_lte_ca_summary">Enhances LTE bandwidth by aggregating supported bands</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
+
     <!-- Tips & support -->
     <string name="witaqua_wiki_summary" translatable="false">WitAqua Wiki</string>
     <string name="witaqua_wiki_url">https://wiki.witaqua.org/</string>
