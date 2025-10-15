@@ -17,4 +17,7 @@
     <string name="edit_device_name_title">デバイス名を編集</string>
     <string name="maintainer_name" translatable="false"></string>
     <string name="ok">OK</string>
+
+    <!-- Reset Felica -->
+    <string name="felica_reset_title">おサイフケータイ対応サービスのデータを消去</string>
 </resources>

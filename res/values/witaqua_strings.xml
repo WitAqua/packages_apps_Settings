@@ -35,4 +35,7 @@
 
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
+
+    <!-- Reset Felica -->
+    <string name="felica_reset_title">Erase data for Osaifu-Keitai services</string>
 </resources>
