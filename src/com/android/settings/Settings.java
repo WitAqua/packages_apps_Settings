@@ -818,4 +818,6 @@ public class Settings extends SettingsActivity {
             }
         }
     }
+
+    public static class CustomSettingsActivity extends SettingsActivity { }
 }
