@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc330851_54e85ac9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-06-19T07:24:00Z",
+      "side": 1,
+      "message": "Add WitAqua Logoにまとめて良さそうです",
+      "revId": "6d8899967890849227feaa4f83207455dbf3ae6b",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    }
+  ]
+}
