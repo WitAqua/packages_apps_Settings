@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b080dba4_b2befa7b",
+        "filename": "res/xml/top_level_settings_expressive.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-06-19T07:31:13Z",
+      "side": 0,
+      "message": "多分消さなくても良いと思います",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 78
+      },
+      "revId": "9af45ea9ba0d88205902e7dbd888f7f4e851f965",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    }
+  ]
+}
