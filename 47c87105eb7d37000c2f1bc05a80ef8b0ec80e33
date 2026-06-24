@@ -22,6 +22,30 @@
       },
       "revId": "47c87105eb7d37000c2f1bc05a80ef8b0ec80e33",
       "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af201cef_2909b006",
+        "filename": "res/drawable/logo_witaqua.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-06-24T14:54:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f6ae116_4761efe9",
+      "range": {
+        "startLine": 38,
+        "startChar": 7,
+        "endLine": 38,
+        "endChar": 16
+      },
+      "revId": "47c87105eb7d37000c2f1bc05a80ef8b0ec80e33",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
     }
   ]
 }
