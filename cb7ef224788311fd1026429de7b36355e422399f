@@ -24,6 +24,30 @@
       "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcfee3cb_f6898b1c",
+        "filename": "res/xml/top_level_settings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-06-24T14:53:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c8c643fb_56d2a79f",
+      "range": {
+        "startLine": 267,
+        "startChar": 0,
+        "endLine": 267,
+        "endChar": 19
+      },
+      "revId": "cb7ef224788311fd1026429de7b36355e422399f",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "29f52859_c5a06536",
@@ -37,6 +61,30 @@
       "writtenOn": "2026-06-19T07:31:13Z",
       "side": 1,
       "message": "```suggestion\n      else -\u003e SystemProperties.get(\"persist.sys.processor_info\", \"Unknown\").replace(\"_\", \" \")\n```",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 101
+      },
+      "revId": "cb7ef224788311fd1026429de7b36355e422399f",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e648aa7f_37be7163",
+        "filename": "src/tokyo/witaqua/settings/utils/DeviceInfoUtil.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-06-24T14:53:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "29f52859_c5a06536",
       "range": {
         "startLine": 46,
         "startChar": 0,
