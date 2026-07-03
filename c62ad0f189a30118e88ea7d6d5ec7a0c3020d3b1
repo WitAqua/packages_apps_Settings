@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa4e6aa2_3585d047",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-07-03T07:01:02Z",
+      "side": 1,
+      "message": "top_level_settings_expressive_desktopにも追加しないといけないです",
+      "revId": "c62ad0f189a30118e88ea7d6d5ec7a0c3020d3b1",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    }
+  ]
+}
