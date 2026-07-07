@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f6f9eda_fe8dea5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000009
+      },
+      "writtenOn": "2026-07-07T05:03:19Z",
+      "side": 1,
+      "message": "通知履歴がすでにあるからいらない",
+      "revId": "4f8488b202893e5e86c274d90bec1a74fac8a55e",
+      "serverId": "5a06c6fe-ecb2-400e-bcbd-78c9ba895894"
+    }
+  ]
+}
