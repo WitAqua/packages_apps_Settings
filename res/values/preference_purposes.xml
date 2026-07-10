@@ -806,4 +806,7 @@
     <string name="nfc_enabled_purpose" translatable="false">Whether NFC is enabled</string>
     <string name="mobile_network_data_roaming_enabled_purpose" translatable="false">Whether data roaming is enabled for the mobile network.</string>
     <string name="auto_select_network_purpose" translatable="false">Whether the device automatically selects the best available mobile network or requires the user to manually choose one.</string>
+
+    <!-- WitAqua additions -->
+    <string name="selinux_status_purpose" translatable="false">Provides SELinux status</string>
 </resources>
