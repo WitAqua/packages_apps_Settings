@@ -18,10 +18,12 @@ package com.android.settings.deviceinfo.imei;
 
 import android.app.Dialog;
 import android.app.settings.SettingsEnums;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -115,5 +117,13 @@ public class ImeiInfoDialogFragment extends InstrumentedDialogFragment {
             text = PhoneNumberUtil.expandByTts(text);
         }
         textView.setText(text);
+    }
+
+    public void setImage(int viewId, Bitmap bitmap) {
+        final ImageView imageview = mRootView.findViewById(viewId);
+        if (imageview == null) {
+            return;
+        }
+        imageview.setImageBitmap(bitmap);
     }
 }
