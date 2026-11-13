@@ -115,5 +115,6 @@ public class HomepagePreferenceLayoutHelper {
         setIconPaddingStart(mIconPaddingStart);
         setTextPaddingStart(mTextPaddingStart);
         setAlert(mAlertValue);
+        org.witaqua.settings.widget.PreferenceCustomizer.onBindHomepagePreference(holder);
     }
 }
