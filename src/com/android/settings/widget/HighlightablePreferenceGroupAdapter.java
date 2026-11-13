@@ -141,6 +141,8 @@ public class HighlightablePreferenceGroupAdapter extends SettingsPreferenceGroup
     public void onBindViewHolder(@NonNull PreferenceViewHolder holder, int position) {
         super.onBindViewHolder(holder, position);
         updateBackground(holder, position);
+        org.witaqua.settings.widget.PreferenceCustomizer.onBindPreference(
+                holder, getItem(position));
     }
 
     @VisibleForTesting
