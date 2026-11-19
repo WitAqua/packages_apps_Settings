@@ -80,6 +80,7 @@ import com.android.settings.wifi.WifiTrackerLibProvider
 import com.android.settings.wifi.WifiTrackerLibProviderImpl
 import com.android.settings.wifi.factory.WifiFeatureProvider
 import com.android.settingslib.spaprivileged.framework.common.devicePolicyManager
+import tokyo.witaqua.settings.support.SupportFeatureProviderImpl
 
 /** [FeatureFactory] implementation for AOSP Settings. */
 open class FeatureFactoryImpl : FeatureFactory() {
@@ -128,6 +129,10 @@ open class FeatureFactoryImpl : FeatureFactory() {
 
     override val searchFeatureProvider: SearchFeatureProvider by lazy {
         SearchFeatureProviderImpl()
+    }
+
+    override val supportFeatureProvider: SupportFeatureProvider by lazy {
+        SupportFeatureProviderImpl()
     }
 
     override fun getSurveyFeatureProvider(context: Context): SurveyFeatureProvider? = null

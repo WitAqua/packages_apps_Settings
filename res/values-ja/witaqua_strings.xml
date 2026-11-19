@@ -20,4 +20,7 @@
 
     <!-- Reset Felica -->
     <string name="felica_reset_title">おサイフケータイ対応サービスのデータを消去</string>
+
+    <!-- Tips & support -->
+    <string name="witaqua_wiki_url">https://wiki.witaqua.org/ja/</string>
 </resources>
