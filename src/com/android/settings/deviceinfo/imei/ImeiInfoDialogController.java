@@ -18,6 +18,7 @@ package com.android.settings.deviceinfo.imei;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
@@ -25,6 +26,8 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
+
+import com.android.settingslib.BarCodeGenerator;
 
 import com.android.settings.R;
 
@@ -40,6 +43,8 @@ public class ImeiInfoDialogController {
     @VisibleForTesting
     static final int ID_MEID_NUMBER_VALUE = R.id.meid_number_value;
     @VisibleForTesting
+    static final int ID_IMEI_BARCODE = R.id.imei_barcode;
+    @VisibleForTesting
     static final int ID_IMEI_VALUE = R.id.imei_value;
     @VisibleForTesting
     static final int ID_IMEI_SV_VALUE = R.id.imei_sv_value;
@@ -52,6 +57,9 @@ public class ImeiInfoDialogController {
     private final TelephonyManager mTelephonyManager;
     private final SubscriptionInfo mSubscriptionInfo;
     private final int mSlotId;
+
+    private static final int BAR_CODE_WIDTH = 800;
+    private static final int BAR_CODE_HEIGHT = 200;
 
     public ImeiInfoDialogController(@NonNull ImeiInfoDialogFragment dialog, int slotId) {
         mDialog = dialog;
@@ -109,6 +117,8 @@ public class ImeiInfoDialogController {
             // device is not GSM/UMTS, do not display GSM/UMTS features
             mDialog.removeViewFromScreen(ID_GSM_SETTINGS);
         }
+
+        mDialog.setImage(ID_IMEI_BARCODE, getImeiBarCode(mTelephonyManager.getImei(mSlotId)));
     }
 
     private void updateDialogForGsmPhone() {
@@ -117,6 +127,7 @@ public class ImeiInfoDialogController {
                 mTelephonyManager.getDeviceSoftwareVersion(mSlotId));
         // device is not CDMA, do not display CDMA features
         mDialog.removeViewFromScreen(ID_CDMA_SETTINGS);
+        mDialog.setImage(ID_IMEI_BARCODE, getImeiBarCode(mTelephonyManager.getImei(mSlotId)));
     }
 
     @VisibleForTesting
@@ -147,5 +158,14 @@ public class ImeiInfoDialogController {
     @VisibleForTesting
     private boolean isValidSlotIndex(int slotIndex, TelephonyManager telephonyManager) {
         return slotIndex >= 0 && slotIndex < telephonyManager.getPhoneCount();
+    }
+
+    private Bitmap getImeiBarCode(String imei) {
+        try {
+            return BarCodeGenerator.encodeBarCode(imei, BAR_CODE_WIDTH, BAR_CODE_HEIGHT);
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to generate barcode for imei: " + imei, e);
+            return null;
+        }
     }
 }
